@@ -5,7 +5,9 @@ import NavBar from "@/components/navbar/NavBar.vue";
 
 <template>
 
-<nav-bar>即将开始一个伟大的项目，我的目标是成为最伟大的程序员</nav-bar>
+<nav-bar>
+  <router-view></router-view>
+</nav-bar>
 </template>
 
 <style scoped>

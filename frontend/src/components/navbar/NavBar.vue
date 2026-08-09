@@ -26,7 +26,7 @@ import SearchIcon from "@/components/navbar/Icon/SearchIcon.vue";
 </div>
       </div>
       <div class="navbar-end">
-        <button class="btn btn-ghost">登录</button>
+        <router-link :to="{name: 'user-login'}" active-class="btn-active" class="btn btn-ghost">登录</router-link>
 
       </div>
 
@@ -43,22 +43,22 @@ import SearchIcon from "@/components/navbar/Icon/SearchIcon.vue";
       <ul class="menu w-full grow">
 
         <li>
-          <button class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Homepage">
+          <router-link :to="{name: 'homepage-index'}" active-class="menu-focus" class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Homepage">
             <HomepageIcon/>
             <span class="is-drawer-close:hidden">首页</span>
-          </button>
+          </router-link>
         </li>
         <li>
-          <button class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Homepage">
+          <router-link :to="{name: 'friend-index'}" active-class="menu-focus" class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Friend">
             <FriendIcon/>
             <span class="is-drawer-close:hidden">好友</span>
-          </button>
+          </router-link>
         </li>
         <li>
-          <button class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Homepage">
+          <router-link :to="{name: 'create-index'}" active-class="menu-focus" is-drawer-close:tooltip is-drawer-close:tooltip-right data-tip="Create">
             <CreateIcon/>
             <span class="is-drawer-close:hidden">创作</span>
-          </button>
+          </router-link>
         </li>
 
       </ul>
