@@ -16,9 +16,9 @@
       <label class="label">Confirm Password</label>
       <input type="password" class="input" placeholder="请再次输入您的密码"/>
 
-      <router-link :to="{name :'user-login'}" class="btn btn-neutral mt-4">登录</router-link>
+      <router-link :to="{name :'user-register'}" class="btn btn-neutral mt-4">注册</router-link>
       <div class="flex justify-end">
-        <router-link :to="{name :'user-register'}" class="btn btn-small">注册</router-link>
+        <router-link :to="{name :'user-login'}" class="btn btn-small">登录</router-link>
       </div>
     </fieldset>
 
