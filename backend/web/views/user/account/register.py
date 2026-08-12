@@ -4,6 +4,7 @@ from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
 
 from web.models.user import UserProfile
+from web.views.user.account.refresh_token import RefreshTokenView
 
 
 class Register(APIView):

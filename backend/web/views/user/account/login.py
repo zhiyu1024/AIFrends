@@ -7,6 +7,7 @@ from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
 
 from web.models.user import UserProfile
+from web.views.user.account.refresh_token import RefreshTokenView
 
 
 class LoginView(APIView):
@@ -44,7 +45,8 @@ class LoginView(APIView):
             })
 
         except:
-
+            import traceback
+            traceback.print_exc()
             return Response({
                     'error': '系统异常，请稍后再试'
             })

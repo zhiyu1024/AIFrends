@@ -23,13 +23,13 @@ async function handleLogout() {
     }
 
   }catch(error){
-    console.log(error)
+
   }
 }
 </script>
 
 <template>
-  <div class="dropdown  dropdown-end">
+  <div class="dropdown  dropdown-end" v-if="user.hasPullUserInfo && user.isLogin() && user.id">
     <div tabindex="0" role="button" class="avatar btn btn-circle w-8 h-8 mr-6">
       <div class="w-8 rounded-full">
         <img :src="user.photo" alt="">

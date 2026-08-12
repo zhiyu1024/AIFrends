@@ -93,7 +93,7 @@ const router = createRouter({
 
 router.beforeEach((to, from) => {
   const user = useUserStore()
-  if (to.meta.needLogin && !user.isLogin()) {
+  if (to.meta.needLogin &&user.hasPullUserInfo && !user.isLogin()) {
     return {
       name: 'user-login',
     }
